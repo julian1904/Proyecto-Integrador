@@ -1,14 +1,13 @@
-.profil-info {
+.profile-info {
     margin-bottom: 25px;
 }
-
 
 .profile-img {
     width: 80%;
     max-width: 300px;
 }
 
-.profil-img-seccion {
+.profile-img-seccion {
     position: relative;
     display: inline;
 }
@@ -19,11 +18,10 @@
     position: absolute;
     width: 100%;
     left: 0%;
-
-
+    bottom: 0%;
 }
 
-.profil {
+.profile {
     text-align: center;
 }
 
@@ -34,7 +32,7 @@
     color: var(--primary-color);
 }
 
-.profil-details {
+.profile-details {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.3;
@@ -57,7 +55,7 @@
 }
 
 @media (min-width: 950px) {
-    .profil-info {
+    .profile-info {
         margin-bottom: 0px;
     }
     
@@ -67,7 +65,7 @@
         max-width: 350px;
     }   
     
-    .profil {
+    .profile {
         text-align: left;
         display: flex;
         justify-content: space-between;
@@ -77,15 +75,15 @@
     }
     
     .profile-title {
-        font-size: 50px;
+        font-size: 60px;
     }
     
-    .profil-details {
-        font-size: 20px;
+    .profile-details {
+        font-size: 25px;
         margin: 30px 0;
     }
     
     .profile-btn {
-        font-size: 25px;
+        font-size: 28px;
     }
 }

@@ -1,6 +1,8 @@
 .experiences-body {
     background-color: var(--primary-color);
     color: var(--text-color-inverse);
+    border-radius: 14px;
+    
 }
 
 .experiences-title {
@@ -37,55 +39,47 @@
 
 .experience {
     padding: 25px;
-    max-width: 500px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
 @media (min-width: 950px) {
+
     .experiences-title {
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 50px;
         margin: 25px;
     }
     
     .experience-date {
-        font-size: 25px;
+        font-size: 28px;
         font-weight: bold;
-        color: var(--secundario-color);
+        color: var(--secondary-color);
     }
     
     .experience-company {
-        font-size: 20px;
+        font-size: 28px;
         text-transform: uppercase;
         margin-top: 5px;
     }
     
     .experience-position {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 28px;
         margin-top: 20px;
     }
     
     .experience-description {
         font-weight: 400;
-        font-size: 15px;
+        font-size: 25px;
         margin-top: 10px;
     }
     
     .experience {
         padding: 25px;
-        max-width: 500px;
+        max-width: 980px;
         margin: 0 auto;
     }  
-
-    .experiences-grid {
-        display: grid;
-        grid-template-columns: auto 2px auto;
-    }
-
-    .line {
-        background-color: var(--text-color-inverse);
-    }
 }

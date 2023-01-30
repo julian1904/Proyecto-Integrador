@@ -13,9 +13,9 @@ const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
 
 const observer = new IntersectionObserver(
     (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
             const id = entry.target.getAttribute("id");
-            const menuLinks = document.querySelector(`.menu a[href="#${id}"]`)
+            const menuLinks = document.querySelector(`.menu a[href="#${id}"]`);
 
             if (entry.isIntersecting) {
                 document.querySelector(".menu a.selected").classList.remove("selected");
@@ -23,18 +23,18 @@ const observer = new IntersectionObserver(
             }
         });
     },
-    { rootMargin: "-30% 0px -70% opx"}
+    { rootMargin: "-30% 0px -70% 0px"}
 );
 
 
-menuLinks.forEach(menuLinks => {
-    menuLinks.addEventListener("click", function () {
+menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener("click", function () {
         menu.classList.remove("menu_opened");
-    })
+    });
 
-    const hash = menuLinks.getAttribute("href");
+    const hash = menuLink.getAttribute("href");
     const target = document.querySelector(hash);
     if (target) {
         observer.observe(target);
     }
-})
+});
